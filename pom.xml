@@ -7,7 +7,7 @@
   </parent>
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>jakarta.inject</groupId>
+  <groupId>consulo.internal</groupId>
   <artifactId>jakarta.inject-api</artifactId>
   <packaging>jar</packaging>
   <name>Jakarta Dependency Injection</name>
@@ -74,6 +74,8 @@
   <properties>
     <packages.export>jakarta.inject.*</packages.export>
     <spec_version>2.0</spec_version>
+    <maven.compiler.target>9</maven.compiler.target>
+    <maven.compiler.source>9</maven.compiler.source>
   </properties>
 
   <build>
@@ -104,7 +106,7 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-source-plugin</artifactId>
       </plugin>
-      <plugin>
+      <!--<plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
         <configuration>
@@ -129,7 +131,7 @@ Use is subject to <a href="{@docRoot}/doc-files/speclicense.html" target="_top">
             </goals>
           </execution>
         </executions>
-      </plugin>
+      </plugin> -->
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
